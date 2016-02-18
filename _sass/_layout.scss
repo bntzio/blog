@@ -87,6 +87,7 @@
     flex-wrap: wrap;
 }
 .blog-content-post {
+    position: relative;
     height: 30rem;
     width: 20rem;
     margin: 1em;
@@ -97,11 +98,23 @@
 }
 .blog-content-post-category-tag {
     position: absolute;
-    top: 194px;
+    top: 189px;
     left: 12px;
     color: white;
-    padding: 2px 4px;
+    padding: 2px 8px;
     font-size: 14px;
+}
+.blog-content-post-category-tag.business-red {
+    background-color: #d81d4e;
+}
+.blog-content-post-category-tag.design-yellow {
+    background-color: #ecd018;
+}
+.blog-content-post-category-tag.development-blue {
+    background-color: #009cf3;
+}
+.blog-content-post-category-tag.life-pink {
+    background-color: #ea4c89;
 }
 .blog-content-post-category-tag.marketing-orange {
     background-color: #ff4742;
