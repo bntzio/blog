@@ -14,9 +14,10 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
-    background-color: $background-color;
+    font-size: 16px;
+    // font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    color: #333;
+    background-color: #fff;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
     -moz-font-feature-settings: "kern" 1;
@@ -155,22 +156,22 @@ pre {
 /**
  * Wrapper
  */
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
+// .wrapper {
+//     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+//     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+//     margin-right: auto;
+//     margin-left: auto;
+//     padding-right: $spacing-unit;
+//     padding-left: $spacing-unit;
+//     @extend %clearfix;
 
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
+//     @include media-query($on-laptop) {
+//         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+//         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
 
 
 
@@ -203,4 +204,13 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+
+/**
+ * Custom
+ */
+.blog {
+    display: flex;
+    flex-direction: column;
 }

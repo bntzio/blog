@@ -4,17 +4,30 @@
   {% include head.html %}
 
   <body>
+    <div class="blog">
+      {% include header.html %}
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+      <div class="blog-top">
+        <h3 class="blog-top-title animated fadeInUp">THE MAKER'S BLOG</h3>
+        <select class="blog-top-selection">
+          <option value="all" selected>All Categories</option>
+          <option value="development">Design</option>
+          <option value="business">Development</option>
+          <option value="business">Business</option>
+          <option value="business">Marketing</option>
+          <option value="life">Life</option>
+        </select>
       </div>
+
+      <div class="page-content">
+        
+          {{ content }}
+        
+      </div>
+
+    <!--   {% include footer.html %} -->
+
     </div>
-
-    {% include footer.html %}
-
   </body>
 
 </html>
