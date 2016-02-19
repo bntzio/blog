@@ -345,3 +345,24 @@
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
 }
+
+
+/**
+ * Markdown Formatting
+ */
+.md-image {
+    padding: 15px 0;
+}
+.image-to-center {
+    margin: 0 auto;
+    display: block;
+}
+.image-to-right {
+    float: right;
+}
+.image-to-left {
+    float: left;
+}
+.text-to-center {
+    text-align: center;
+}
