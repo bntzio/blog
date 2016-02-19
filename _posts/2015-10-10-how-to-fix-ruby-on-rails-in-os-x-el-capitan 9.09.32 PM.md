@@ -23,7 +23,7 @@ Yes, I started to hate El Capitan, but as I dig deeper into the problem, I found
 
 The problem was with **Homebrew**.
 
-### Homebrew vs SIP
+### Homebrew vs SIP ###
 
 As you know, Homebrew is a package manager for OS X, you probably have been using it to install things into your machine, like this:
 
