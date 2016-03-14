@@ -1,6 +1,7 @@
 ---
 layout: post
 permalink: how-to-fix-ruby-on-rails-in-os-x-el-capitan
+lang: en
 title: How to fix Ruby on Rails in OS X El Capitan
 date: 2015-10-10
 autor: Enrique Benitez

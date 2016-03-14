@@ -1,6 +1,7 @@
 ---
 layout: post
 permalink: fail-at-everything
+lang: en
 title: Fail at everything
 date: 2016-03-14
 autor: Enrique Benitez

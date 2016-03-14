@@ -1,4 +1,13 @@
-<header class="site-header">
+<header class="site-header"> 
     <a href="http://bntz.io" class="site-header-title">BNTZIO</a>
-    <a href="#" class="site-header-about">About</a>
+    <ul class="blog-top-menu">
+      <li><a href="#" class="switch" id="switchLang">Spanish version</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+    <script>
+      $winLocPath = window.location.pathname;
+      if($winLocPath != '/blog/') {
+        $('.switch').addClass('hidden');
+      }
+    </script>
 </header>

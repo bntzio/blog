@@ -2,8 +2,9 @@
 layout: default
 ---
 
-    <section class="blog-content">
+    <section class="blog-content spanish hidden">
       {% for post in site.posts %}
+       {% if post.lang == 'es' %}
         <div class="blog-content-post animated fadeInUp">
         
             <a href="{{ post.url | prepend: site.baseurl }}"><div class="blog-content-post-image-container"><img src={{ post.image }} class="blog-content-post-image-container-img"/></div></a>
@@ -23,5 +24,52 @@ layout: default
             </span>
         
         </div>
+        {% endif %}
       {% endfor %}
+    </section>
+
+
+
+    <section class="blog-content english">
+      {% for post in site.posts %}
+       {% if post.lang == 'en' %}
+        <div class="blog-content-post animated fadeInUp">
+        
+            <a href="{{ post.url | prepend: site.baseurl }}"><div class="blog-content-post-image-container"><img src={{ post.image }} class="blog-content-post-image-container-img"/></div></a>
+
+            <h2 class="{{ post.category-title-slug }} {{ post.color-code }}">
+              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+
+            <div class="{{ post.category-tag-slug }} {{ post.color-code }}">{{ post.category-tag }}</div>
+
+            <span class="blog-content-post-meta"><b>{% if post.autor %}By {{ post.autor }} - {% endif %}</b>{{ post.date | date: "%b %-d, %Y" }}</span>
+
+            <p class="blog-content-post-description">{{ post.description }}</p>
+
+            <span class="{{ post.category-link-slug }} {{ post.color-code }}">
+              <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
+            </span>
+        
+        </div>
+        {% endif %}
+      {% endfor %}
+
+      <script>
+        var $switcher = $('#switchLang');
+        var english;
+          $switcher.click(function(e) {
+            e.preventDefault();
+            if (english == true) {
+              $('a#switchLang').text("Spanish version");
+              english = false;
+            } else {
+              $('a#switchLang').text("English version");
+              english = true
+            }
+            $('.blog-content.spanish').toggleClass('hidden');
+            $('.blog-content.english').toggleClass('hidden');
+          });
+      </script>
+
     </section>
