@@ -14,8 +14,6 @@ category-link-slug: blog-content-post-link
 categories: life
 image: https://images.unsplash.com/photo-1456515003192-808f8e9ca393?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=1e75f07c23b1acd8bd3b6e2a88f2487e
 ---
-#Fail at everything
-
 Have you ever read something that goes like… *“Learn from mistakes”*, *“Failure is the mother of success”*, *“If you’re not making mistakes, then you’re not doing anything”*, and all sorts of failure quotes?
 
 Well, let me tell you that failure is the most beautiful thing in the world.
