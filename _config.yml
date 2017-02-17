@@ -11,7 +11,7 @@ email: hello@bntz.io
 description: > # this means to ignore newlines until "baseurl:"
   Enrique Benitez also known as bntzio is a developer focusing on code, design, marketing and business.
   In this blog he writes about startups, code, design, growth hacking and life in general.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "/jekyll-blog" # the subpath of your site, e.g. /blog
 url: "http://bntzio.github.io" # the base hostname & protocol for your site
 twitter_username: bntzio
 github_username:  bntzio
